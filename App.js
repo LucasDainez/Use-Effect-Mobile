@@ -14,11 +14,11 @@ import {
 function BoasVindas() {
   useEffect(() => {
     if (Platform.OS === 'web') {
-      window.alert('Bem-vindo ao sistema!');
+      window.alert('Welcome to the sistem');
     } else {
-      Alert.alert('Boas-vindas', 'Bem-vindo ao sistema!');
+      Alert.alert('Seja Bem Vindo, Você faz a diferença');
     }
-  }, []); // array vazio: roda só uma vez, quando o componente carrega
+  }, []); // array vazio: roda só ao carregar
 
   return (
     <View style={styles.card}>
@@ -33,8 +33,8 @@ function Contador() {
   const [contador, setContador] = useState(0);
 
   useEffect(() => {
-    console.log('O contador foi alterado!');
-  }, [contador]); // roda sempre que "contador" mudar
+    console.log('O contador mudou!');
+  }, [contador]); // roda sempre que "contador" alterar
 
   return (
     <View style={styles.card}>
